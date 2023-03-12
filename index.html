@@ -131,6 +131,13 @@
                 </g>
               </svg>Otwórz moje CV
             </a>
+            
+            <a class=" fs-1 text-decoration-none" target="_blank"
+                  href="https://www.linkedin.com/in/%C5%82ukasz-langer-51968b15b/">
+                <img src="assets\img\icons\LinkedIn.jpg" class="rounded-pill hover-top btn" width="100px"></a>
+                <a class=" fs-1 text-decoration-none" target="_blank"
+                  href="https://github.com/lukaszlanger">
+                <img src="assets\img\icons\GitHub.jpg" class="rounded-pill hover-top btn" width="100px"></a>
           </div>
         </div>
       </div>
@@ -179,63 +186,91 @@
       <!--/.bg-holder-->
       <div class="row flex-center">
         <div class="col-auto text-center">
-          <h2 class="fw-bold">Projekty, nad którymi obecnie pracuję</h2>
+          <h2 class="fw-bold">Moje projekty</h2>
           <hr class="mx-auto text-dark" style="height:2px;width:50px" />
         </div>
       </div>
       <br><br>
+
+      <!-- Quality Control Platform -->
       <div class="container">
-        <div class="row g-xl-0 align-items-center">
+        <div class="row h-100 justify-content-center pt-4">
           <div class="col-md-6">
-            <img class="img-fluid mb-5 mb-md-0" src="assets/img/illustrations/prison.jpg" width="400" alt="" />
+            <!-- Slider -->
+              <div id="qualitycontrolplatform" class="carousel slide rounded-3 shadow" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://github.com/lukaszlanger/quality-control-platform/blob/main/screenshots/main.jpg?raw=true" class="d-block w-100 rounded-3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://github.com/lukaszlanger/quality-control-platform/blob/main/screenshots/register2.jpg?raw=true" class="d-block w-100 h-100 rounded-3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://github.com/lukaszlanger/quality-control-platform/blob/main/screenshots/loginpage2.jpg?raw=true" class="d-block w-100 h-100 rounded-3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://github.com/lukaszlanger/quality-control-platform/blob/main/screenshots/supervisorview2.jpg?raw=true" class="d-block w-100 h-100 rounded-3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://github.com/lukaszlanger/quality-control-platform/blob/main/screenshots/chart1.jpg?raw=true" class="d-block w-100 h-100 rounded-3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://github.com/lukaszlanger/quality-control-platform/blob/main/screenshots/chart2.jpg?raw=true" class="d-block w-100 h-100 rounded-3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#qualitycontrolplatform" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Dalej</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#qualitycontrolplatform" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Wstecz</span>
+                </button>
+                <div class="carousel-indicators justify-content-center">
+                  <button type="button" data-bs-target="#qualitycontrolplatform" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#qualitycontrolplatform" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#qualitycontrolplatform" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#qualitycontrolplatform" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#qualitycontrolplatform" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#qualitycontrolplatform" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+              </div>
           </div>
           <div class="col-md-6 text-center text-md-start">
-            <h2 class="fw-bold lh-base">[Web-Api] Serwis<br />do zarządzania więzieniem</h2>
+            <h2 class="fw-bold lh-base">Quality Control Platform 📱🎓</h2>
+            <h4>Platforma do kontroli jakości</h4>
             <hr class="text-dark mx-auto mx-md-0" style="height:2px;width:50px" />
-            <p class="pt-3">Projekt polega na zarządzaniu więzieniem. Od strony użytkownika można umówić się na wizytę.
-              Od strony administracyjnej będzie możliwość zarządzania całą strukturą więzienia - więźniami, celami,
-              terminami spotkań z więźniami.
-              <br class="d-none d-lg-block" /><b>Front-end</b>: Angular
-              <br class="d-none d-lg-block" /><b>Back-end</b>: Java + Spring
-              <br class="d-none d-lg-block" /><b>DAO</b>: Hibernate
-              <br class="d-none d-lg-block" /><b>Baza danych</b>: MySQL
+            <p class="pt-1 text-justify">
+              Platforma do analizy i wyników kontroli jakości jest moim autorskim projektem inżynierskim. Jego funkcje pozwalają na zarządzanie procesem kontroli jakości wykonywanym przez kontrolera jakości. Platforma jest aplikacją mobilną dla pracowników, a stroną internetową dla przełożonych.
+              <br class="d-none d-lg-block" />
+              <br class="d-none d-lg-block" />
+              <b>Tech stack</b>
+              <br class="d-none d-lg-block" />
+              Aplikacja została zaprogramowana z wykorzystaniem Ionic Framework oraz Angular. Część serwerową wykonuje aplikacja web-api napisana w .NET Core (Entity Framework Core). Dane są przechowywane w bazie danych SQL. Aplikacja połączona jest z serwerem Firebase odpowiedzialnym za przechowywanie zaszyfrowanych danych logowania oraz zdjęć i podpisów cyfrowych.
             </p>
             <div class="py-3">
-              <a class="btn btn-lg btn-outline-primary rounded-pill"
-                href="https://github.com/jayzawadzki19/prison-web-service" target="_blank" type="submit">Sprawdź na
-                GitHub</a>
+              <a class="btn btn-sm btn-primary rounded-pill hover-top"
+                href="https://github.com/lukaszlanger/quality-control-platform" target="_blank" type="submit">Sprawdź na GitHub</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="py-6 py-lg-6" id="older_projects">
 
-      <div class="container-lg">
-        <div class="bg-holder"
-          style="background-image:url(assets/img/illustrations/dot-2.png);background-position:left top;background-size:initial;margin-top:120px;margin-left:-35px;">
-        </div>
-
-        <div class="row flex-center">
-          <div class="col-auto text-center">
-            <h2 class="fw-bold">Moje pozostałe projekty</h2>
-            <hr class="mx-auto text-dark" style="height:2px;width:50px" />
-          </div>
-        </div>
+      <!-- Virtual Cart -->
+      <div class="container">
         <div class="row h-100 justify-content-center pt-6">
-          <div class="col-12 col-sm-9 col-md-6 mt-4">
-            <div class="card h-100 rounded-3 shadow">
-              <!-- Slider -->
-              <div id="clinic" class="carousel slide" data-bs-ride="carousel">
+          <div class="col-md-6">
+            <!-- Slider -->
+              <div id="clinic" class="carousel slide rounded-3 shadow" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/img/gallery/clinic1.png" class="d-block w-100" alt="...">
+                    <img src="assets/img/gallery/clinic1.png" class="d-block w-100 rounded-3">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/gallery/clinic2.png" class="d-block w-100" alt="...">
+                    <img src="assets/img/gallery/clinic2.png" class="d-block w-100 h-100 rounded-3">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/gallery/clinic3.png" class="d-block w-100" alt="...">
+                    <img src="assets/img/gallery/clinic3.png" class="d-block w-100 h-100 rounded-3">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#clinic" data-bs-slide="next">
@@ -247,27 +282,92 @@
                   <span class="visually-hidden">Wstecz</span>
                 </button>
                 <div class="carousel-indicators justify-content-center">
-                  <button type="button" data-bs-target="#clinic" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#clinic" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#clinic" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#clinic" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
               </div>
-              <!-- Opis projektu -->
-              <div class="card-body p-4 text-center text-md-start">
-                <h5 class="fw-bold">Projekt kliniki medycznej</h5>
-                <p class="card-text">Aplikacja napisana w C# (ASP.NET) obsługująca klinikę medyczną o różnych
-                  specjalizacjach medycznych. Projekt korzysta z bazy danych SQL.</p>
-                <a class="text-decoration-none" target="_blank"
-                  href="https://github.com/lukaszlanger/MedMasters-clinic-app" role="button">GitHub
-                  <img src="https://img.icons8.com/ios/50/000000/forward--v1.png" width="14px" /></a>
-              </div>
+          </div>
+          <div class="col-md-6 text-center text-md-start">
+            <h2 class="fw-bold lh-base">Virtual Cart App 📱🛒</h2>
+            <h4>Wirtualny koszyk</h4>
+            <hr class="text-dark mx-auto mx-md-0" style="height:2px;width:50px" />
+            <p class="pt-1 text-justify">
+              Platforma do analizy i wyników kontroli jakości jest moim autorskim projektem inżynierskim. Jego funkcje pozwalają na zarządzanie procesem kontroli jakości wykonywanym przez kontrolera jakości. Platforma jest aplikacją mobilną dla pracowników, a stroną internetową dla przełożonych.
+              <br class="d-none d-lg-block" />
+              <br class="d-none d-lg-block" />
+              <b>Tech stack</b>
+              <br class="d-none d-lg-block" />
+              Aplikacja została zaprogramowana z wykorzystaniem Ionic Framework oraz Angular. Część serwerową wykonuje aplikacja web-api napisana w .NET Core (Entity Framework Core). Dane są przechowywane w bazie danych SQL. Aplikacja połączona jest z serwerem Firebase odpowiedzialnym za przechowywanie zaszyfrowanych danych logowania oraz zdjęć i podpisów cyfrowych.
+            </p>
+            <div class="py-3">
+              <a class="btn btn-sm btn-primary rounded-pill hover-top"
+                href="https://github.com/lukaszlanger/virtual-cart" target="_blank" type="submit">Sprawdź na GitHub</a>
             </div>
           </div>
-          <div class="col-12 col-sm-9 col-md-6 mt-4">
-            <div class="card h-100 rounded-3 shadow">
-              <!-- Slider -->
-              <div id="shop" class="carousel slide" data-bs-ride="carousel">
+        </div>
+      </div>
+
+      <!-- Med Clinic -->
+      <div class="container">
+        <div class="row h-100 justify-content-center pt-6">
+          <div class="col-md-6">
+            <!-- Slider -->
+              <div id="clinic" class="carousel slide rounded-3 shadow" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/img/gallery/clinic1.png" class="d-block w-100 rounded-3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/gallery/clinic2.png" class="d-block w-100 h-100 rounded-3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/gallery/clinic3.png" class="d-block w-100 h-100 rounded-3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#clinic" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Dalej</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#clinic" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Wstecz</span>
+                </button>
+                <div class="carousel-indicators justify-content-center">
+                  <button type="button" data-bs-target="#clinic" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#clinic" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#clinic" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 text-center text-md-start">
+            <h2 class="fw-bold lh-base">Med Clinic 📱🛒</h2>
+            <h4>Platforma do zarządzania kliniką medyczną</h4>
+            <hr class="text-dark mx-auto mx-md-0" style="height:2px;width:50px" />
+            <p class="pt-3 text-justify">
+              Projekt polega na zarządzaniu więzieniem. Od strony użytkownika można umówić się na wizytę.
+              Od strony administracyjnej będzie możliwość zarządzania całą strukturą więzienia - więźniami, celami,
+              terminami spotkań z więźniami.
+              <br class="d-none d-lg-block" /><b>Front-end</b>: Angular
+              <br class="d-none d-lg-block" /><b>Back-end</b>: Java + Spring
+              <br class="d-none d-lg-block" /><b>DAO</b>: Hibernate
+              <br class="d-none d-lg-block" /><b>Baza danych</b>: MySQL
+            </p>
+            <div class="py-3">
+              <a class="btn btn-sm btn-primary rounded-pill hover-top"
+                href="https://github.com/jayzawadzki19/prison-web-service" target="_blank" type="submit">Sprawdź na
+                GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Music Shop -->
+      <div class="container">
+        <div class="row h-100 justify-content-center pt-6">
+          <div class="col-md-6">
+            <!-- Slider -->
+              <div id="musicshop" class="carousel slide rounded-3 shadow" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="assets/img/gallery/shop1.png" class="d-block w-100" alt="...">
@@ -285,39 +385,96 @@
                     <img src="assets/img/gallery/shop5.png" class="d-block w-100" alt="...">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#shop" data-bs-slide="next">
+                <button class="carousel-control-prev" type="button" data-bs-target="#musicshop" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Dalej</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#shop" data-bs-slide="prev">
+                <button class="carousel-control-next" type="button" data-bs-target="#musicshop" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Wstecz</span>
                 </button>
                 <div class="carousel-indicators justify-content-center">
-                  <button type="button" data-bs-target="#shop" data-bs-slide-to="0" class="active" aria-current="true"
+                  <button type="button" data-bs-target="#musicshop" data-bs-slide-to="0" class="active" aria-current="true"
                     aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#shop" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#shop" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#shop" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#shop" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#musicshop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#musicshop" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#musicshop" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#musicshop" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
               </div>
-
-              <!-- Opis projektu -->
-              <div class="card-body p-4 text-center text-md-start">
-                <h5 class="fw-bold">Projekt sklepu z albumami muzycznymi</h5>
-                <p class="card-text">Prosty sklep z albumami muzycznymi zaprojektowany w Angularze. W projekcie użyto
-                  Bootstrapa.</p>
-                <a class="text-decoration-none" target="_blank" href="https://github.com/lukaszlanger/music-album-shop"
-                  role="button">GitHub
-                  <img src="https://img.icons8.com/ios/50/000000/forward--v1.png" width="14px" /></a>
-              </div>
+          </div>
+          <div class="col-md-6 text-center text-md-start">
+            <h2 class="fw-bold lh-base">Music Shop 📱🛒</h2>
+            <h4>Prosty sklep internetowy z obsługą koszyka i paginacji</h4>
+            <hr class="text-dark mx-auto mx-md-0" style="height:2px;width:50px" />
+            <p class="pt-3 text-justify">
+              Projekt polega na zarządzaniu więzieniem. Od strony użytkownika można umówić się na wizytę.
+              Od strony administracyjnej będzie możliwość zarządzania całą strukturą więzienia - więźniami, celami,
+              terminami spotkań z więźniami.
+              <br class="d-none d-lg-block" /><b>Front-end</b>: Angular
+              <br class="d-none d-lg-block" /><b>Back-end</b>: Java + Spring
+              <br class="d-none d-lg-block" /><b>DAO</b>: Hibernate
+              <br class="d-none d-lg-block" /><b>Baza danych</b>: MySQL
+            </p>
+            <div class="py-3">
+              <a class="btn btn-sm btn-primary rounded-pill hover-top"
+                href="https://github.com/jayzawadzki19/prison-web-service" target="_blank" type="submit">Sprawdź na
+                GitHub</a>
             </div>
           </div>
-          <div class="text-center pt-4 z-index-2">
-            <a class="btn btn-lg btn-outline-primary rounded-pill z-index-2 hover-top"
-              href="https://github.com/lukaszlanger?tab=repositories" target="_blank" type="submit">Projekty na
-              GitHubie</a>
+        </div>
+      </div>
+
+      <!-- Prison Web Service -->
+      <div class="container">
+        <div class="row h-100 justify-content-center pt-6">
+          <div class="col-md-6">
+            <!-- Slider -->
+              <div id="clinic" class="carousel slide rounded-3 shadow" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/img/gallery/clinic1.png" class="d-block w-100 rounded-3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/gallery/clinic2.png" class="d-block w-100 h-100 rounded-3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/gallery/clinic3.png" class="d-block w-100 h-100 rounded-3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#clinic" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Dalej</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#clinic" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Wstecz</span>
+                </button>
+                <div class="carousel-indicators justify-content-center">
+                  <button type="button" data-bs-target="#clinic" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#clinic" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#clinic" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 text-center text-md-start">
+            <h2 class="fw-bold lh-base">Prison Web Service 📱🛒</h2>
+            <h4>Serwis do zarządzania więzieniem</h4>
+            <hr class="text-dark mx-auto mx-md-0" style="height:2px;width:50px" />
+            <p class="pt-3 text-justify">
+              Projekt polega na zarządzaniu więzieniem. Od strony użytkownika można umówić się na wizytę.
+              Od strony administracyjnej będzie możliwość zarządzania całą strukturą więzienia - więźniami, celami,
+              terminami spotkań z więźniami.
+              <br class="d-none d-lg-block" /><b>Front-end</b>: Angular
+              <br class="d-none d-lg-block" /><b>Back-end</b>: Java + Spring
+              <br class="d-none d-lg-block" /><b>DAO</b>: Hibernate
+              <br class="d-none d-lg-block" /><b>Baza danych</b>: MySQL
+            </p>
+            <div class="py-3">
+              <a class="btn btn-sm btn-primary rounded-pill hover-top"
+                href="https://github.com/jayzawadzki19/prison-web-service" target="_blank" type="submit">Sprawdź na
+                GitHub</a>
+            </div>
           </div>
         </div>
       </div>
@@ -488,7 +645,6 @@
                         <b>Blockchain</b> oraz kryptowaluty.
                       </p>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -499,11 +655,6 @@
     </section>
 
     <section class="py-6 pt-7 bg-primary-gradient" id="contact">
-      <div class="bg-holder"
-        style="background-image:url(assets/img/illustrations/dot.png);background-position:left bottom;background-size:auto;filter:contrast(1.5);">
-      </div>
-      <!--/.bg-holder-->
-
       <div class="bg-holder"
         style="background-image:url(assets/img/illustrations/dot-2.png);background-position:right top;background-size:auto;margin-top:-75px;">
       </div>
@@ -530,15 +681,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-4 col-md-4 col-lg mb-3 order-1 order-sm-3">
-            <h6 class="lh-lg fs-2 fw-bold text-light">Profile</h6>
-            <ul class="list-unstyled mb-md-4 mb-lg-0">
-              <li class="lh-lg"><a class="text-light fs-1 text-decoration-none" target="_blank"
-                  href="https://www.linkedin.com/in/%C5%82ukasz-langer-51968b15b/">LinkedIn</a></li>
-              <li class="lh-lg"><a class="text-light fs-1 text-decoration-none" target="_blank"
-                  href="https://github.com/lukaszlanger">GitHub</a></li>
-            </ul>
-          </div>
+          
         </div>
       </div>
     </section>
