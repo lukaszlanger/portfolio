@@ -7561,8 +7561,8 @@ fieldset:disabled .btn {
 }
 
 .shadow {
-  -webkit-box-shadow: 0 0.6375rem 0.975rem 0 #F4F8FE, 0 3px 6px 0 #F4F8FE !important;
-  box-shadow: 0 0.6375rem 0.975rem 0 #F4F8FE, 0 3px 6px 0 #F4F8FE !important;
+  -webkit-box-shadow: 0.6375rem 0.6375rem 0.975rem 0.6375rem #F4F8FE, 0 3px 6px 6px #F4F8FE !important;
+  box-shadow: rgb(232 242 255) 0 0 -0.125rem -0.825rem, rgb(207 207 207 / 67%) 1px 1px 6px 6px !important;
 }
 
 .shadow-sm {
